@@ -55,11 +55,18 @@ export default function App() {
             Core Features
           </button>
           <button
+            className={activeContentIndex === 3 ? "active" : ""}
+            onClick={() => setActiveContentIndex(3)}
+          >
+            React vs Vanilla
+          </button>
+                        <button
             className={activeContentIndex === 2 ? "active" : ""}
             onClick={() => setActiveContentIndex(2)}
           >
             Related Resources
           </button>
+
           <button
             className={activeContentIndex === 3 ? "active" : ""}
             onClick={() => setActiveContentIndex(3)}
